@@ -15,7 +15,7 @@ function App() {
         <div className='flex flex-col items-center pt-11 bg-black text-white '>
 
             <Header logo="https://cdn.builder.io/api/v1/image/assets/TEMP/dbab6af55a4d44db6a43069e06e169dde27aeb951a576c1520d2855568e6fc8a?apiKey=325f674200924c05a4b34be8928260b3&" />
-            <First FirstImage='https://c.pxhere.com/photos/8e/40/photo-49739.jpg!d'/>
+            <First buttonImage='https://cdn.builder.io/api/v1/image/assets/TEMP/4b03be7fe43c08afadb91aff4ca820e6a39e527beb82a8a7cd55b0f65b6388a7?apiKey=5e0d9264fc9a4d708f7164c058795995&' heroImage='https://cdn.builder.io/api/v1/image/assets/TEMP/5fab2ec1246eabceb6e1566583d611e76e30f63e65d8af71db03d87437dcb77a?apiKey=5e0d9264fc9a4d708f7164c058795995&width=2000 '/>
             <h2 className="font-bold mt-8 ml-0 bg-clip-text text-transparent bg-gradient-to-r font-mabry from-cyan-300 to-blue-500 text-6xl">готовый API</h2>
             <h2 className="text-6xl font-bold font-mabry ml-0">для вашего</h2>
             <h2 className="text-6xl font-bold font-mabry ml-0">бизнеса</h2>
