@@ -22,12 +22,12 @@ function App() {
             <Features />
             <ClientExperience />
             <h2 className="mt-20 text-6xl font-mabry text-center text-white w-[760px] max-md:max-w-full max-md:text-4xl">
-                широкий набор <span className="text-white">инструментов</span>
+                широкий набор <span className="bg-clip-text text-transparent bg-gradient-to-r font-mabry from-cyan-300 to-blue-500">инструментов</span>
             </h2>
             <Tools />
 
             <h2 className="mt-20 text-6xl font-mabry text-center text-white w-[760px] max-md:max-w-full max-md:text-4xl">
-                зарегистрируйтесь <span className="text-white">и получите доступ</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r font-mabry from-cyan-300 to-blue-500">зарегистрируйтесь</span> <br></br>и получите доступ
             </h2>
             <RegistrationForm />
             <Footer logo="https://cdn.builder.io/api/v1/image/assets/TEMP/511411a769bc234fcb6fa56062e640b3f4cc9b46d9d461ceeaa3f456815f5575?apiKey=325f674200924c05a4b34be8928260b3&"
