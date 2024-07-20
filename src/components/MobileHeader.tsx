@@ -8,16 +8,20 @@ import React from "react";
 
 export const routes = [
     {
-      title: "Перейти к оценке",
-      href: "#evaluation"
+      title: "Подключить API",
+      href: "#connect"
     },
     {
-      title: "Как это работает?",
-      href: "#how-it-works"
+      title: "Документация",
+      href: "/docs"
     },
     {
-      title: "Для бизнеса",
-      href: "/for-business"
+      title: "FAQ",
+      href: "/faq"
+    },
+    {
+      title: "Для физических лиц",
+      href: "http://nedvizhka.tech/"
     },
   ];
 

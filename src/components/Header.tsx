@@ -17,25 +17,25 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
       </div>
       <nav className="flex w-3/4 justify-around max-md:flex-col max-md:gap-3">
         <a
-          href="#evaluation"
+          href="#connect"
           className="font-inter justify-center px-px py-1"
         >
           Подключить API
         </a>
         <a
-          href="#how-it-works"
+          href="/docs"
           className="justify-center px-px py-1"
         >
           Документация
         </a>
         <a
-          href="/for-business"
+          href="/faq"
           className="justify-center px-px py-1"
         >
           FAQ
         </a>
         <a
-          href="/for-business"
+          href="http://nedvizhka.tech/"
           className="justify-center px-px py-1"
         >
           Для физических лиц

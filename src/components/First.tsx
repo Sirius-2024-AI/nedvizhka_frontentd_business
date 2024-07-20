@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({ heroImage, buttonImage }) => {
                   Сервис на базе AI собственной разработки поможет генерировать отчеты моментально и без дополнительных издержек на сотрудников оценки недвижимости
               </a>
             </div>
-            <a href="#evaluation">
+            <a href="#connect">
               <img
                 loading="lazy"
                 src={buttonImage}

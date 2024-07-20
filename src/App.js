@@ -26,7 +26,7 @@ function App() {
             </h2>
             <Tools />
 
-            <h2 className="max-md:text-4.2xl leading-none mt-20 text-6xl font-mabry text-center text-white w-[760px] max-md:max-w-full max-md:text-4xl">
+            <h2 id="connect" className="max-md:text-4.2xl leading-none mt-20 text-6xl font-mabry text-center text-white w-[760px] max-md:max-w-full max-md:text-4xl">
                 <span className="max-md:text-4.2xl leading-none bg-clip-text text-transparent bg-gradient-to-r font-mabry from-cyan-300 to-blue-500">зарегистрируйтесь</span> <br></br> <span className='max-md:text-4.2xl'>и получите доступ</span>
             </h2>
             <RegistrationForm />

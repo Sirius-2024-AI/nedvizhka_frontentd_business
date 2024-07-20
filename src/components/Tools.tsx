@@ -13,6 +13,7 @@ const Tools: React.FC = () => {
         "Интегрируете API системы автоматизированной оценки стоимости автомобилей в процесс оценки недвижимости, а мы сделаем его максимально удобным",
       iconSrc:
         "https://cdn.builder.io/api/v1/image/assets/TEMP/d77bfa5cfd86fa53f57bd71ec25494185a84501c7da848e6ed358016d3880add?apiKey=5e0d9264fc9a4d708f7164c058795995&",
+      link: "/docs",
     },
     {
       title: "FAQ",
@@ -20,6 +21,7 @@ const Tools: React.FC = () => {
         "Оперативно находите ответы на ваши вопросы, используя наш обширный ресурс информации и поддерживающую команду специалистов, готовых помочь вам в любое время.",
       iconSrc:
         "https://cdn.builder.io/api/v1/image/assets/TEMP/2c71f8b4d60ca13dcae1bd6d1927541f635c20446066c345052df382ebce5092?apiKey=5e0d9264fc9a4d708f7164c058795995&",
+      link: "/faq",
     },
   ];
 
@@ -35,6 +37,7 @@ const Tools: React.FC = () => {
               title={tool.title}
               description={tool.description}
               iconSrc={tool.iconSrc}
+              link={tool.link}
             />
           </div>
         ))}
