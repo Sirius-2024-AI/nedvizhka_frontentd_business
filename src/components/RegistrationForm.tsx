@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 const RegistrationForm: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    company: "",
+    url: "",
+    consent: false,
+    marketing: false,
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value, type, checked } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
-    <form className="flex flex-col px-9 py-10 mt-9 w-full bg-white bg-opacity-10 max-w-[1026px] rounded-[30px] ">
+    <form
+      className="flex flex-col px-9 py-10 mt-9 w-full bg-white bg-opacity-10 max-w-[1026px] rounded-[30px] "
+      onSubmit={handleSubmit}
+    >
       <label htmlFor="name" className="sr-only">
         Как к вам обращаться?
       </label>
       <input
         id="name"
         type="text"
+        value={formData.name}
+        onChange={handleChange}
         placeholder="Как к вам обращаться?"
         className="justify-center items-start px-6 py-4 text-lg rounded-3xl bg-white bg-opacity-10 text-white text-opacity-20"
       />
@@ -19,6 +47,8 @@ const RegistrationForm: React.FC = () => {
         <input
           id="phone"
           type="tel"
+          value={formData.phone}
+          onChange={handleChange}
           placeholder="Номер телефона"
           className="grow justify-center items-start px-6 py-4 rounded-3xl bg-white bg-opacity-10 text-white text-opacity-20 w-fit max-md:px-5 max-md:max-w-full"
         />
@@ -28,6 +58,8 @@ const RegistrationForm: React.FC = () => {
         <input
           id="email"
           type="email"
+          value={formData.email}
+          onChange={handleChange}
           placeholder="Электронная почта"
           className="grow justify-center items-start px-6 py-4 rounded-3xl bg-white bg-opacity-10 text-white text-opacity-20 w-fit max-md:px-5 max-md:max-w-full"
         />
@@ -39,6 +71,8 @@ const RegistrationForm: React.FC = () => {
         <input
           id="company"
           type="text"
+          value={formData.company}
+          onChange={handleChange}
           placeholder="Какую компанию вы представляете?"
           className="grow justify-center items-start px-6 py-4 rounded-3xl bg-white bg-opacity-10 w-fit max-md:px-5 max-md:max-w-full"
         />
@@ -48,6 +82,8 @@ const RegistrationForm: React.FC = () => {
         <input
           id="url"
           type="url"
+          value={formData.url}
+          onChange={handleChange}
           placeholder="Укажите URL вашей компании"
           className="grow justify-center items-start px-6 py-4 rounded-3xl bg-white bg-opacity-10 w-fit max-md:px-5 max-md:max-w-full"
         />
@@ -58,6 +94,8 @@ const RegistrationForm: React.FC = () => {
             <input
               type="checkbox"
               id="consent"
+              checked={formData.consent}
+              onChange={handleChange}
               className="shrink-0 self-start aspect-square w-[15px]"
             />
             <label htmlFor="consent" className="flex-auto max-md:max-w-full">
@@ -68,6 +106,8 @@ const RegistrationForm: React.FC = () => {
             <input
               type="checkbox"
               id="marketing"
+              checked={formData.marketing}
+              onChange={handleChange}
               className="shrink-0 self-start rounded border-2 border-white border-solid h-[15px] w-[15px]"
             />
             <label htmlFor="marketing" className="flex-auto max-md:max-w-full">
