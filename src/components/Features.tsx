@@ -33,7 +33,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="mt-11 w-full max-w-[1025px] max-md:mt-10 max-md:max-w-full">
+    <section className="mt-11 w-full max-w-[1025px] max-md:mt-10 max-md:max-w-full max-md:px-5">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         {features.map((feature, index) => (
           <div

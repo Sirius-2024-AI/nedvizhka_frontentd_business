@@ -12,13 +12,13 @@ const Hero: React.FC<HeroProps> = ({ heroImage, buttonImage }) => {
         <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow justify-center text-5xl font-bold text-white max-md:mt-10 max-md:max-w-full max-md:text-4xl">
             <div className="flex flex-col justify-center py-1 pr-5 max-md:max-w-full max-md:text-4xl">
-              <h1 className="max-md:max-w-full max-md:text-4.2xl">
-                <span className="font-mabry">
-                  готовое решение для автоматизации
+              <h1 className="max-md:max-w-full max-md:text-4.2xl leading-none">
+                <span className="font-mabry leading-none">
+                  готовое решение <br></br>для автоматизации
                 </span>
               </h1>
-              <h1 className="max-md:max-w-full max-md:text-4.2xl">
-                <span className="font-mabry bg-gradient-to-r from-[#0DB6B6] to-[#5454F1] inline-block text-transparent bg-clip-text">оценки недвижимости</span>
+              <h1 className="max-md:max-w-full max-md:text-4.2xl leading-none">
+                <span className="leading-none font-mabry bg-gradient-to-r from-[#0DB6B6] to-[#5454F1] inline-block text-transparent bg-clip-text">оценки недвижимости</span>
               </h1>
               <a className="font-normal mt-11 text-lg max-md:mt-10 max-md:max-w-full">
                   Сервис на базе AI собственной разработки поможет генерировать отчеты моментально и без дополнительных издержек на сотрудников оценки недвижимости

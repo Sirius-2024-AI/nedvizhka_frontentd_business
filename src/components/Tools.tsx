@@ -24,7 +24,7 @@ const Tools: React.FC = () => {
   ];
 
   return (
-    <section className="mt-10 w-full max-w-[1026px] max-md:max-w-full">
+    <section className="mt-10 w-full max-w-[1026px] max-md:max-w-full max-md:px-5">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         {tools.map((tool, index) => (
           <div
