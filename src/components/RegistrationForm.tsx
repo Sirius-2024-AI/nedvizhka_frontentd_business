@@ -22,6 +22,20 @@ const RegistrationForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
+    fetch('http://localhost:8000/api/business/request', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        phone_number: formData.phone,
+        email: formData.email,
+        organization: formData.company,
+        organization_url: formData.url,
+        marketing: formData.marketing
+      })
+    })
   };
 
   return (
